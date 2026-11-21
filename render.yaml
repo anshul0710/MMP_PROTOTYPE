@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: buddy-board-iiit-kota
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: buddy-board-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1
+      - key: DATA_DIR
+        value: /var/data
