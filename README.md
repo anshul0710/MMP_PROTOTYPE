@@ -33,3 +33,4 @@ The API uses Node.js and SQLite. Its database (`server/data/buddyboard.sqlite`) 
 ## Deploy to Render
 
 This folder includes `render.yaml` for a single Node web service that builds the React frontend, serves the API and site from one origin, and stores SQLite under `/var/data`. Connect a Git repository containing this project folder to Render and create a Blueprint from `render.yaml`. The blueprint attaches a persistent disk so student accounts, asks, help history, feedback, and points survive restarts. Render's free web services do not support persistent disks, so this data-preserving setup uses a paid service. See [Render persistent disks](https://render.com/docs/disks) and [Render free service limits](https://render.com/docs/free).
+# MMP_PROTOTYPE
