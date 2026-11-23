@@ -23,3 +23,43 @@ server/data/
 *.njsproj
 *.sln
 *.sw?
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-shm
+*.sqlite-wal
+
+# Dependencies and build output
+node_modules/
+dist/
+
+
+# Local database backup
+server/data.zip
+
+# Temporary deployment inspection files
+.deploy-repo-inspection/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Database files and backups
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-shm
+*.sqlite-wal
+server/data.zip
+
+# Temporary inspection copy
+.deploy-repo-inspection/
